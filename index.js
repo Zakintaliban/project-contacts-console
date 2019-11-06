@@ -1,24 +1,24 @@
 const myContacts = [
   {
     id: 1,
-    name: "Alpha Avalon",
-    phone: "+1 111 101010",
-    email: "alpha@avalon.org",
+    name: "Khasbullah Nukman Zakin",
+    phone: "+62 819 101010",
+    email: "gmail@zakintaliban.com",
     favorite: true,
     rating: 9,
-    tags: ["popular", "cool"]
+    tags: ["it's me FFS"]
   },
   {
     id: 2,
-    name: "Betty Brave",
+    name: "Alfa",
     phone: "+62 812 242424",
-    email: "betty@braverian.com"
+    email: "alfa@alpha.com"
   },
   {
     id: 3,
-    name: "Gamma Gacurio",
+    name: "Bravo",
     phone: "+63 813 363636",
-    email: "gamma@gacurio.dev"
+    email: "bravo@beta.com"
   }
 ];
 
