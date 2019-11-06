@@ -4,21 +4,22 @@ const myContacts = [
     name: "Khasbullah Nukman Zakin",
     phone: "+62 819 121212",
     email: "gmail@zakintaliban.com",
-    favorite: true,
-    rating: 9,
-    tags: ["it's me FFS"]
+    tags: ["it's me FFS"],
+    yearBirth: 2001
   },
   {
     id: 2,
     name: "Alfa",
     phone: "+62 812 242424",
-    email: "alfa@alpha.com"
+    email: "alfa@alpha.com",
+    yearBirth: 2004
   },
   {
     id: 3,
     name: "Bravo",
     phone: "+63 813 363636",
-    email: "bravo@beta.com"
+    email: "bravo@beta.com",
+    yearBirth: 1998
   }
 ];
 
@@ -35,13 +36,13 @@ const showContacts = contacts => {
 
 // -----------------------------------------------------------------------------
 
-const filterContacts = (contacts, minimumNameLength) => {
+const filterContacts = (contacts, age) => {
   let newContacts = [];
 
   for (let index = 0; index < contacts.length; index++) {
     const contact = contacts[index];
 
-    if (contact.name.length >= minimumNameLength) {
+    if (new Date().getFullYear() - contact.yearBirth < age) {
       newContacts.push(contact);
     }
   }
@@ -51,10 +52,10 @@ const filterContacts = (contacts, minimumNameLength) => {
 
 // -----------------------------------------------------------------------------
 
-showContacts(myContacts);
+// showContacts(myContacts);
 
 // -----------------------------------------------------------------------------
 
-const filteredContacts = filterContacts(myContacts, 12);
+const filteredContacts = filterContacts(myContacts, 18);
 
 showContacts(filteredContacts);
