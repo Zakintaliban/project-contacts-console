@@ -2,7 +2,7 @@ const myContacts = [
   {
     id: 1,
     name: "Khasbullah Nukman Zakin",
-    phone: "+62 819 101010",
+    phone: "+62 819 121212",
     email: "gmail@zakintaliban.com",
     favorite: true,
     rating: 9,
